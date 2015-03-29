@@ -1,2 +1,4 @@
 parameters:
+    grossum_feedback.feedback.admin.class: Grossum\FeedbackBundle\Admin\FeedbackAdmin
+    grossum_feedback.feedback.entity.class: Grossum\FeedbackBundle\Entity\Feedback
     grossum_feedback.feedback.manager.class: Grossum\FeedbackBundle\Entity\EntityManager\FeedbackManager

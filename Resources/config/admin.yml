@@ -1,9 +1,9 @@
 services:
     sonata.admin.feedback:
-        class: Grossum\FeedbackBundle\Admin\FeedbackAdmin
+        class: %grossum_feedback.feedback.admin.class%
         tags:
             - { name: sonata.admin, manager_type: orm, group: group.main, label: "Обратная связь" }
         arguments:
             - ~
-            - Grossum\FeedbackBundle\Entity\Feedback
+            - %grossum_feedback.feedback.entity.class%
             - ~
