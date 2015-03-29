@@ -1,0 +1,5 @@
+services:
+    grossum_feedback.feedback.manager:
+        class: %grossum_feedback.feedback.manager.class%
+        arguments:
+            - @grossum_core.entity_manager

@@ -1,0 +1,24 @@
+{% extends 'GrossumCoreBundle::layouts.html.twig' %}
+
+{% block content %}
+    <div class="feedback">
+        <h3>Написать нам</h3>
+        {{ form_start(feedback, {'attr': {'class': '', 'novalidate': 'novalidate'}}) }}
+            <div>
+                {{ form_widget(feedback.name, {'attr': {'placeholder': 'Ваше имя' } }) }}
+                {{ form_errors(feedback.name) }}
+            </div>
+            <div>
+                {{ form_widget(feedback.email, {'attr': {'placeholder': 'Вам e-mail' } }) }}
+                {{ form_errors(feedback.email) }}
+            </div>
+            <div>
+                {{ form_widget(feedback.message, {'attr': {'placeholder': 'Сообщение' } }) }}
+                {{ form_errors(feedback.message) }}
+            </div>
+            <div>
+                {{ form_widget(feedback.save) }}
+            </div>
+        {{ form_end(feedback) }}
+    </div>
+{% endblock %}

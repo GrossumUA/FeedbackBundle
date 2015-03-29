@@ -1,0 +1,9 @@
+services:
+    sonata.admin.feedback:
+        class: Grossum\FeedbackBundle\Admin\FeedbackAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: group.main, label: "Обратная связь" }
+        arguments:
+            - ~
+            - Grossum\FeedbackBundle\Entity\Feedback
+            - ~

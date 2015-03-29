@@ -1,0 +1,2 @@
+parameters:
+    grossum_feedback.feedback.manager.class: Grossum\FeedbackBundle\Entity\EntityManager\FeedbackManager

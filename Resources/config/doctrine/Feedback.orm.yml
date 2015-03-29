@@ -1,0 +1,34 @@
+Grossum\FeedbackBundle\Entity\Feedback:
+    type: mappedSuperclass
+    table: feedback
+    repositoryClass: Grossum\FeedbackBundle\Entity\Repository\FeedbackRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: IDENTITY
+            options:
+                unsigned: true
+    fields:
+        name:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        message:
+            type: text
+        readed:
+            type: boolean
+        createdAt:
+            type: datetime
+            nullable: false
+            column: created_at
+        updatedAt:
+            type: datetime
+            nullable: false
+            column: updated_at
+    lifecycleCallbacks:
+        prePersist: [setCreatedAtValue, setUpdatedAtValue]
+        preUpdate: [setUpdatedAtValue]
