@@ -11,40 +11,38 @@ use Grossum\CoreBundle\Entity\EntityTrait\DateTimeControlTrait;
 class Feedback
 {
     use DateTimeControlTrait;
-    /**
-     * @var integer
-     */
-    private $id;
+
+    protected $id;
 
     /**
      * @var string
      */
-    private $name;
+    protected $name;
 
     /**
      * @var string
      */
-    private $email;
+    protected $email;
 
     /**
      * @var string
      */
-    private $message;
+    protected $message;
 
     /**
      * @var boolean
      */
-    private $readed;
+    protected $readed;
 
     /**
      * @var \DateTime
      */
-    private $createdAt;
+    protected $createdAt;
 
     /**
      * @var \DateTime
      */
-    private $updatedAt;
+    protected $updatedAt;
 
 
     /**
