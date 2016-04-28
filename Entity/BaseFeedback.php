@@ -5,10 +5,7 @@ namespace Grossum\FeedbackBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Grossum\CoreBundle\Entity\EntityTrait\DateTimeControlTrait;
 
-/**
- * Feedback
- */
-class Feedback
+abstract class BaseFeedback
 {
     use DateTimeControlTrait;
 
@@ -43,7 +40,6 @@ class Feedback
      * @var \DateTime
      */
     protected $updatedAt;
-
 
     /**
      * Get id

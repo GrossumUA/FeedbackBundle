@@ -1,0 +1,11 @@
+Application\Grossum\FeedbackBundle\Entity\Feedback:
+    type: entity
+    table: feedback
+    repositoryClass: Application\Grossum\FeedbackBundle\Entity\Repository\FeedbackRepository
+    id:
+        id:
+            type: integer
+            unsigned: true
+            id: true
+            generator:
+                strategy: AUTO
