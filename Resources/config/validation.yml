@@ -12,5 +12,9 @@ Grossum\FeedbackBundle\Entity\Feedback:
                 min: 3
                 max: 30
             - Regex: '/^\w+/'
+            - Email:
+                strict: true
+                checkMX: true
+                checkHost: true
         message:
             - NotBlank: ~

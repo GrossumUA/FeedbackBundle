@@ -19,4 +19,9 @@ class FeedbackManager
         $this->objectManager = $objectManager;
         $this->repository    = $objectManager->getRepository('GrossumFeedbackBundle:Feedback');
     }
+
+    public function getRepository()
+    {
+        return $this->repository;
+    }
 }
